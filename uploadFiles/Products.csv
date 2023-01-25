@@ -1,0 +1,8 @@
+productId,productName,category,brand,price,isDeleted
+1,iPhone 11,mobile,apple,56000,FALSE
+2,iPhone 14,mobile,apple,84000,FALSE
+3,vaio,laptop,vaio,50000,TRUE
+4,vivo v9,mobile,vivo,49000,FALSE
+5,s20 Note,mobile,samsung,40000,TRUE
+6,acer aspire,laptop,acer,42000,FALSE
+7,iMac,laptop,apple,100000,FALSE

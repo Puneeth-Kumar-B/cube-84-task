@@ -1,6 +1,8 @@
 const joi=require('joi');
 const {bodyParamValidation}=require('./validator');
 
+
+//VALIDATION FOR USER REGISTRATION
 const userValidation=(req, res, next) => {
     const schema=joi.object({
         name: joi.string().min(3).required(),
@@ -13,10 +15,12 @@ const userValidation=(req, res, next) => {
     return bodyParamValidation(req, res, next, schema)
 }
 
+
+//VALIDATION FOR USER LOGIN
 const loginValidation=(req, res, next) => {
     const schema=joi.object({
         user: joi.string().required(),
-        password: joi.string().min(7).required()
+        password: joi.string().required()
     })
     return bodyParamValidation(req, res, next, schema)
 }

@@ -1,6 +1,8 @@
 const joi=require('joi');
 const {bodyParamValidation}=require('./validator');
 
+
+//VALIDATION FOR ORDER CREATION
 const createOrderValidation=(req, res, next) => {
     const schema=joi.object({
         productIds: joi.array().items(joi.object({
@@ -12,6 +14,8 @@ const createOrderValidation=(req, res, next) => {
     return bodyParamValidation(req, res, next, schema)
 }
 
+
+//VALIDATION FOR ORDER UPDATION
 const updateOrderValidation=(req, res, next) => {
     const schema=joi.object({
         productIds: joi.array().items(joi.object({
